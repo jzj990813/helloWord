@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentParamGroup">
+    <option name="className" value="com.jian.utils.Controller.UtilsController" />
+    <option name="method" value="Test" />
+    <option name="module" value="helloWord" />
+    <option name="originUrl" value="/Test" />
+    <option name="url" value="/Test" />
+  </component>
+</project>

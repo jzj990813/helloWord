@@ -1,0 +1,42 @@
+server:
+  port: 8080
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: broker-a
+    topic: first_topic
+      #sync tag(同步消息tag)
+    sync-tag: anran-sync-tags
+      #async tag(异步消息tag)
+    async-tag: anran-async-tags
+      #oneway tag(单向消息tag)
+    oneway-tag: anran-oneway-tags
+
+spring:
+#  redis
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-idle: 16
+        max-active: 32
+        min-idle: 8
+  devtools:
+    restart:
+      enable: true
+# mysql
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/jzj?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    name: root
+    password: 990813
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#es
+  data:
+    elasticse
+  application:
+    name: boot-order-service
+
+
+
